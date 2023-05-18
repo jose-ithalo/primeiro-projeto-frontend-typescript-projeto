@@ -10,7 +10,7 @@ function SignIn() {
         <div className='container'>
             <div className='cardSignIn'>
                 <img src={LogoCubos} alt='Logo da Cubos' />
-                <form>
+                <form className='formCubos'>
                     <input type='text' placeholder='E-mail' />
                     <input type='password' placeholder='Passaword' />
 
