@@ -3,11 +3,16 @@ import '../../css/responsive.css';
 
 import LogoCubos from '../../assets/logoCubos.svg';
 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import api from '../../services/api';
 import { FormEvent, useState } from 'react';
+import useAuth from '../../hook/useAuth';
 
 function SignIn() {
+
+    const { handleAddToken } = useAuth();
+
+    const navigate = useNavigate();
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -25,6 +30,12 @@ function SignIn() {
                 email,
                 password
             });
+
+            const { accessToken } = response.data;
+
+            handleAddToken(accessToken);
+
+            navigate('/Main');
 
         } catch (error) {
             console.log(error);
