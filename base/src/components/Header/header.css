@@ -1,0 +1,19 @@
+header {
+
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    top: 30px;
+    width: 100%;
+}
+
+.arrowBack {
+    cursor: pointer;
+    position: absolute;
+    left: 45px;
+}
+
+.arrowBack:active {
+    transform: scale(1.2);
+}
