@@ -5,12 +5,12 @@ import LogoCubos from '../../assets/logoCubos.svg';
 
 import { Link, useNavigate } from 'react-router-dom';
 import api from '../../services/api';
-import { FormEvent, useState } from 'react';
+import { FormEvent, useState, useEffect } from 'react';
 import useAuth from '../../hook/useAuth';
 
 function SignIn() {
 
-    const { handleAddToken } = useAuth();
+    const { handleAddToken, handleGetToken } = useAuth();
 
     const navigate = useNavigate();
 
@@ -41,6 +41,15 @@ function SignIn() {
             console.log(error);
         }
     }
+
+    useEffect(() => {
+
+        const token = handleGetToken();
+
+        if (token) {
+            navigate('/Main');
+        }
+    });
 
     return (
         <div className='container'>
