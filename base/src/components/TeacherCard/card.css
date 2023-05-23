@@ -1,0 +1,19 @@
+.nameTeacher {
+    font-size: 2rem;
+}
+
+.teacherCard {
+    background-color: #DA0175;
+    border-radius: 8px;
+    color: white;
+    opacity: 0.9;
+    padding: 24px 26px;
+    height: 236px;
+    width: 200px;
+}
+
+.teacherCard:hover {
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1.03);
+}
