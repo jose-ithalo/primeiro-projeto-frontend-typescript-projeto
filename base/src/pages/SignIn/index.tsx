@@ -2,11 +2,11 @@ import './signIn.css';
 import '../../css/responsive.css';
 
 import LogoCubos from '../../assets/logoCubos.svg';
+import api from '../../services/api';
+import useAuth from '../../hook/useAuth';
 
 import { Link, useNavigate } from 'react-router-dom';
-import api from '../../services/api';
 import { FormEvent, useState, useEffect } from 'react';
-import useAuth from '../../hook/useAuth';
 
 function SignIn() {
 
