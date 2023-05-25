@@ -49,10 +49,11 @@ function SignIn() {
         if (token) {
             navigate('/Main');
         }
-    });
+        // eslint-disable-next-line
+    }, []);
 
     return (
-        <div className='container'>
+        <div className='container center'>
             <div className='cardSignIn'>
                 <img src={LogoCubos} alt='Logo da Cubos' />
 
