@@ -1,4 +1,10 @@
-@media (max-width: 1220px) {
+@media (min-width: 250px) and (max-width: 500px) {
+    .cardSignIn {
+        width: 90%;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1220px) {
 
     .cardSignIn {
         width: 65%;
