@@ -36,6 +36,7 @@ button:hover {
 }
 
 .formCubos input {
+    all: unset;
     background-color: rgba(46, 46, 54, 1);
     border: none;
     color: #fff;
