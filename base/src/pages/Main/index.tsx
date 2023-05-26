@@ -32,12 +32,14 @@ function Main() {
 
   useEffect(() => {
     loadTeachers();
+
   }, []);
+
 
   return (
     <div className='container'>
       <Header />
-      <div>
+      <div className='boxTeachers'>
         {teacherList.map((teacher) => (
           <TeacherCard key={teacher.id} teacher={teacher} />
         ))}
@@ -46,11 +48,5 @@ function Main() {
     </div>
   );
 }
-
-{/* <TeacherCard teacher={{
-  id: 1,
-  avatar: 'https://static.vecteezy.com/system/resources/thumbnails/009/749/751/small/avatar-man-icon-cartoon-male-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg',
-  name: 'Desconhecido'
-}} /> */}
 
 export default Main;
