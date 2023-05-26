@@ -43,8 +43,8 @@ function Main() {
         {teacherList.map((teacher) => (
           <TeacherCard key={teacher.id} teacher={teacher} />
         ))}
-      </div>
 
+      </div>
     </div>
   );
 }
