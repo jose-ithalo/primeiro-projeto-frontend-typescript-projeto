@@ -1,6 +1,7 @@
 import { Navigate, Outlet, Route, Routes } from 'react-router-dom';
 import Main from './pages/Main';
 import SignIn from './pages/SignIn';
+import TeacherDeatail from './pages/TeacherDetail';
 import useAuth from './hook/useAuth';
 
 type Prop = {
@@ -25,6 +26,7 @@ function MainRoutes() {
 
             <Route element={<ProtectedRoutes redirectTo='/' />}>
                 <Route path='/Main' element={<Main />} />
+                <Route path='/TeacherDetail' element={<TeacherDeatail />} />
             </Route>
         </Routes>
     )
