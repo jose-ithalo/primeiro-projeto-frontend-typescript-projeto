@@ -5,14 +5,7 @@ import TeacherCard from '../../components/TeacherCard';
 import api from '../../services/api';
 
 import { useEffect, useState } from 'react';
-
-type Teacher = {
-  id: number,
-  name: string,
-  avatar: string,
-  stack: string,
-  bio: string
-}
+import Teacher from '../../types/teacherType';
 
 function Main() {
 
@@ -34,7 +27,6 @@ function Main() {
     loadTeachers();
 
   }, []);
-
 
   return (
     <div className='container'>
