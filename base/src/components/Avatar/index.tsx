@@ -1,12 +1,17 @@
 import './avatar.css';
 
 type PropAvatar = {
-    image: string
+    image: string,
+    size?: number
+
 }
 
-function Avatar({ image }: PropAvatar) {
+function Avatar({ image, size }: PropAvatar) {
+
+    const sizeAvatar: number = size || 140;
+
     return (
-        <img src={image} alt="Avatar" className='avatar' />
+        <img src={image} alt="Avatar" className='avatar' style={{ width: sizeAvatar }} />
     );
 }
 
