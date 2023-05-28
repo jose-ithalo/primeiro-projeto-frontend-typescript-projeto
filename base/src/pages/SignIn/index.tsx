@@ -1,5 +1,4 @@
 import './signIn.css';
-import '../../css/responsive.css';
 
 import LogoCubos from '../../assets/logoCubos.svg';
 import api from '../../services/api';
