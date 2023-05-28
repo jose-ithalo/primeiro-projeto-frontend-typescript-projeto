@@ -1,18 +1,28 @@
 import './card.css';
 
 import Avatar from '../Avatar';
+import useDetail from '../../hook/useDetail';
+import { useNavigate } from 'react-router-dom';
+import Teacher from '../../types/teacherType';
 
 type PropTeacher = {
-    teacher: {
-        id: number,
-        avatar: string,
-        name: string
-    }
+    teacher: Teacher
 }
 
 function TeacherCard({ teacher }: PropTeacher) {
+
+    const navigate = useNavigate();
+    const { handleInsertTeacher } = useDetail();
+
+    function handleNavTeacher() {
+
+        handleInsertTeacher(teacher);
+
+        navigate('/TeacherDetail');
+    }
+
     return (
-        <div className='teacherCard'>
+        <div className='teacherCard' onClick={handleNavTeacher}>
             <Avatar image={teacher.avatar} />
             <h1 className='nameTeacher'>{teacher.name}</h1>
         </div>
