@@ -10,4 +10,14 @@
         width: 65%;
     }
 
+    .cardDetail {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .cardDetail {
+        width: 90%;
+    }
 }
