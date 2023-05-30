@@ -1,6 +1,14 @@
-@media (min-width: 250px) and (max-width: 500px) {
+@media (max-width: 500px) {
     .cardSignIn {
         width: 90%;
+    }
+
+    .cardDetail {
+        width: 90%;
+    }
+
+    .cardDetail p {
+        text-align: initial;
     }
 }
 
@@ -14,10 +22,4 @@
         width: 50%;
     }
 
-}
-
-@media (max-width: 500px) {
-    .cardDetail {
-        width: 90%;
-    }
 }
