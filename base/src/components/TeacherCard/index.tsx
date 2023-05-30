@@ -1,7 +1,7 @@
 import './card.css';
 
 import Avatar from '../Avatar';
-import useDetail from '../../hook/useDetail';
+import useDetail from '../../hooks/useDetail';
 import { useNavigate } from 'react-router-dom';
 import Teacher from '../../types/teacherType';
 
